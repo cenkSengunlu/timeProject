@@ -42,7 +42,7 @@ function dateTime(){
         dakika = format(tarih.getMinutes());
         saniye = format(tarih.getSeconds());
 
-        document.querySelector('#gun').innerHTML = gunArr[tarih.getDay()];
+        document.querySelector('#gun').innerHTML = gunArr[tarih.getDay() - 1];
         document.querySelector('#date').innerHTML = `${gun}.${ay}.${yil}`;
         document.querySelector('#time').innerHTML = `${saat}:${dakika}:${saniye}`;
     }, 100);
